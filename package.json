@@ -1,13 +1,31 @@
 {
-  "name": "taxi",
+  "name": "nextjs-example",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 8000",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watch",
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "test:cypress": "NODE_ENV=test cypress open",
+    "lint": "eslint .",
+    "lint:watch": "esw . --watch --cache",
+    "lint:watchAll": "esw . --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrSubhonbek/testKFUServer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSubhonbek/testKFUServer/issues"
+  },
+  "homepage": "https://github.com/MrSubhonbek/testKFUServer#readme",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "classnames": "^2.3.2",
